@@ -11,7 +11,7 @@ const Login = () => {
     e.preventDefault();
     if (email && password) {
       localStorage.setItem('isLoggedIn', true);
-      navigate('/Stocks');
+      navigate('/Dashboard');
     } else {
       alert('Please enter credentials');
     }
