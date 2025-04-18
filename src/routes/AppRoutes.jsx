@@ -21,7 +21,6 @@ const AppRoutes = () => {
 
       {/* Protected Routes */}
       {isAuthenticated ? (
-          <div className="flex-1 px-4 sm:px-6 md:px-10 lg:px-20 py-6">
         <>
           <Route path="/" element={<Navigate to="/dashboard" />} />
           <Route path="/dashboard" element={<Dashboard />} />
@@ -31,7 +30,6 @@ const AppRoutes = () => {
           <Route path="/gift" element={<Gift />} />
           <Route path="/settings" element={<Settings />} />
         </>
-        </div>
       ) : (
         <Route path="*" element={<Navigate to="/login" />} />
       )}
